@@ -34,7 +34,7 @@ if __name__ == "__main__":
         st.title("Zero-Shot Sentiment Analysis")
         st.subheader("Classify text sentiment using OpenAI's GPT model.")
     with col2:
-        st.image('ai.jpeg', width=70)
+        st.image('ai.jpg', width=70)
 
     st.markdown("---")
     #Initialize session state for emotions if not already set
