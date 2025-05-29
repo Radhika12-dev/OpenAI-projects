@@ -1,0 +1,1 @@
+EMOTIONS = 'positive, negative, neutral'
