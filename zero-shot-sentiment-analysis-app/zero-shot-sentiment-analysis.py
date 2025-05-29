@@ -37,6 +37,12 @@ if __name__ == "__main__":
         st.image('ai.jpeg', width=70)
 
     st.markdown("---")
+    #Initialize session state for emotions if not already set
+    if 'last_input' not in st.session_state:
+        st.session_state.last_input = ''
+    if 'last_output' not in st.session_state:
+        st.session_state.last_output = ''
+
     with st.form(key='sentiment_form'):
         default_emotions = EMOTIONS
         emotions = st.text_input('Emotions (comma-separated)', value=default_emotions)
@@ -47,7 +53,13 @@ if __name__ == "__main__":
             if not text.strip():
                 st.warning("Please enter some text to classify.")
             else:
-                emotion = get_classify_sentiment(text, emotions)
+                if text == st.session_state.last_input:
+                    emotion = st.session_state.last_output # Use cached result
+                else:
+                    emotion = get_classify_sentiment(text, emotions)
+                    st.session_state.last_input = text
+                    st.session_state.last_output = emotion
+                
                 st.success(f"The classified sentiment is: **{emotion}**")
 
     st.sidebar.header("Instructions")
