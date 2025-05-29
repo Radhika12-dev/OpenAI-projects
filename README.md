@@ -47,4 +47,7 @@ MIT License
 
 ---
 
+## App is deployed on Streamlit
+https://openai-projects-hhr42wxmwtkhsg8tlpg8n7.streamlit.app/
+
 **Made with ❤️ using Streamlit and OpenAI**
