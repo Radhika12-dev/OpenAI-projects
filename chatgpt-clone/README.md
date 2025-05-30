@@ -33,10 +33,8 @@ This project features persistent question history, feedback buttons, and a clean
     pip install -r requirements.txt
     ```
 
-4. **Set your OpenAI API key:**
-    - Add your API key to a file named `key.txt` or use Streamlit secrets (`.streamlit/secrets.toml`).
 
-5. **Run the app:**
+4. **Run the app:**
     ```bash
     streamlit run chatgpt_clone.py
     ```
@@ -62,3 +60,4 @@ MIT License
 ---
 
 **Enjoy your AI-powered Helping Agent!**
+**Deployed on Streamlit(https://openai-projects-i6yoysrky5zuzmguniwh74.streamlit.app/)**
