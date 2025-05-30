@@ -1,0 +1,2 @@
+HISTORY_FILE = "history.json"
+HISTORY_EXPIRY_DAYS=7

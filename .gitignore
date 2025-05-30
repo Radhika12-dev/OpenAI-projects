@@ -13,6 +13,11 @@ venv/
 
 # Ignore OpenAI API key file
 key.txt
+chatgpt_key.txt
+
+# Ignore history and log files
+history.json
+*.log
 
 # Ignore OS files
 .DS_Store
