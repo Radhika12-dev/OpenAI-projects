@@ -140,7 +140,7 @@ if __name__ == "__main__":
             if msg['role'] == 'user':
                 st.markdown(
                     f"""
-                    <div style='background-color:#e3eafc; color:#111; padding:10px 16px; border-radius:12px; margin-bottom:8px; text-align:right;'>
+                    <div style='padding:10px 16px; border-radius:12px; margin-bottom:8px; text-align:right;'>
                         <b>You:</b> {msg['content']}
                     </div>
                     """,
@@ -149,7 +149,7 @@ if __name__ == "__main__":
             else:
                 st.markdown(
                     f"""
-                    <div style='background-color:#f1f1f1; color:#111; padding:10px 16px; border-radius:12px; margin-bottom:8px; text-align:left;'>
+                    <div style='background-color:#F5F5F5; color:#111; padding:10px 16px; border-radius:12px; margin-bottom:8px; text-align:left;'>
                         <b>Bot:</b> {msg['content']}
                     </div>
                     """,
