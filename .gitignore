@@ -14,6 +14,7 @@ venv/
 # Ignore OpenAI API key file
 key.txt
 chatgpt_key.txt
+diet_planner_key.txt
 
 # Ignore history and log files
 history.json
